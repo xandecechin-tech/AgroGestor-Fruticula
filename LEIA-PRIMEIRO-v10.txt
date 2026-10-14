@@ -1,0 +1,10 @@
+AGROGESTOR v1.0 - SINCRONIZACAO DE TESTES
+
+1. No Supabase SQL Editor execute supabase-sync-v10.sql.
+2. No GitHub substitua index.html e atualize sw.js para esta versao.
+3. Em Supabase Authentication > URL Configuration configure Site URL: https://xandecechin-tech.github.io/AgroGestor-Fruticula/ e Redirect URLs com esse endereco.
+4. Em Authentication > Providers confirme Email habilitado; pode exigir confirmacao de e-mail.
+5. Abra o GitHub Pages e cadastre-se com email e senha NOVOS.
+6. Teste em dois aparelhos com o mesmo usuario.
+
+ATENCAO: Este e um primeiro prototipo de sincronizacao por JSON de cada usuario. Nao usa as tabelas normalizadas do schema v1. Edicoes simultaneas sao bloqueadas por versao, mas o estoque e custos ainda nao tem validacoes transacionais no servidor. Nao use para controle financeiro definitivo. Dados anteriores no navegador nao sao migrados automaticamente: exporte backup no HTML antigo e importe no novo, apos login.
